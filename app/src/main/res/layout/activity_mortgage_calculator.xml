@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.sjsu.pham01.dan.mortgagecalculator.MortgageCalculatorActivity">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input"
+            android:textSize="20sp"
+            android:layout_column="1"
+            android:gravity="center" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_value"
+            android:textSize="20sp"
+            android:gravity="right" />
+
+        <EditText
+            android:id="@+id/home_value"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/down_payment"
+            android:textSize="20sp"
+            android:gravity="right" />
+        <EditText
+            android:id="@+id/down_payment"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_rate"
+            android:textSize="20sp"
+            android:gravity="right" />
+        <EditText
+            android:id="@+id/interest_rate"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms"
+            android:textSize="20sp"
+            android:gravity="right" />
+
+        <Spinner
+            android:id="@+id/terms_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/terms_array"
+            android:prompt="@string/terms_prompt"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/property_tax_rate"
+            android:textSize="20sp"
+            android:gravity="right" />
+        <EditText
+            android:id="@+id/property_tax_rate"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_column="1"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_column="2"
+            android:text="@string/calculate" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/output"
+            android:textSize="20sp"
+            android:layout_column="1"
+            android:gravity="center" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly_payment_amount"
+            android:gravity="right" />
+        <TextView
+            android:id="@+id/monthly_payment_amount"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="left" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_interest_paid"
+            android:gravity="right" />
+        <TextView
+            android:id="@+id/total_interest_paid"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="left" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_property_tax_paid"
+            android:gravity="right" />
+        <TextView
+            android:id="@+id/total_property_tax_paid"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="left" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_off_date"
+            android:gravity="right" />
+        <TextView
+            android:id="@+id/pay_off_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="left" />
+    </TableRow>
+
+</TableLayout>

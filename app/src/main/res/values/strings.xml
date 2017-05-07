@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="input">Input</string>
+    <string name="home_value">Home Value: $</string>
+    <string name="down_payment">Down Payment: $"</string>
+    <string name="interest_rate">Interest Rate: "</string>
+    <string name="terms">Terms: </string>
+    <string name="terms_prompt">Select a term</string>
+    <string-array name="terms_array">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string name="property_tax_rate">Property Tax Rate: </string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="output">Output</string>
+    <string name="monthly_payment_amount">Monthly Payment Amount: $</string>
+    <string name="total_interest_paid">Total Interest Paid: $</string>
+    <string name="total_property_tax_paid">Total Property Tax Paid: $</string>
+    <string name="pay_off_date">Pay Off Date: </string>
+
+</resources>
